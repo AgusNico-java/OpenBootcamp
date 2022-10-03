@@ -1,0 +1,11 @@
+def esBiciesto(year):
+    if (year % 4) == 0:
+        if (year % 100) == 0 and (year % 400) != 0:
+            return False
+        else:
+            return True
+    else:
+        return False
+
+print("El año 1900 fue biciesto: ", esBiciesto(1900))
+print("El año 2000 fue biciesto: ", esBiciesto(2000))
